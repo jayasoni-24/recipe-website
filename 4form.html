@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="4formp.css">
+</head>
+<body>
+        <form id="add-recipe-form" onsubmit="saveRecipe(event)">
+            <h2>Add a New Recipe</h2>
+            <label for="recipe-name">Recipe Name:</label><br>
+            <input type="text" id="recipe-name" name="recipe-name" required class="box"><br>
+
+            <label for="recipe-image">Image URL:</label><br>
+            <input type="url" id="recipe-image" name="recipe-image" required class="box"><br>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" required class="box"></textarea ><br>
+
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" required class="box"></textarea><br>
+
+            <button type="submit">Add Recipe</button>
+        </form>
+
+        <a href="1mainpage.html"><button class="button">home</button></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
